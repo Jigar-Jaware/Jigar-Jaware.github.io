@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
         <link href="../css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="../css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="../css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -20,9 +21,22 @@
         <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all"/>
         <!--[if gte IE 9]>
         	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
-		<![endif]-->
+        <![endif]-->
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
         <script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+       
+        <!-- Gallery -->
+        <link href="../css/gallery.css" rel="stylesheet">
+        <script src="../js/gallery.js"></script>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">    
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
     </head>
     <body>
     	<div class="loader">
@@ -35,7 +49,8 @@
 		<div class="nav-container">
 			<nav class="simple-bar top-bar">
 				<div class="container">
-	
+				
+				
 					<div class="row nav-menu">
 						<div class="col-md-3 col-sm-3 columns">
 							<a href="../index.html">
@@ -61,46 +76,88 @@
 					
 				</div>
 			</nav>
-		</div>
+		
+        </div>
+        
 		
 		<div class="main-container">
-			<section>
-				<div class="container">
-					<div>
-						<img src="../img/portfolio-details-3.jpg">
-					</div>
-				</div>
-			</section>
-			<section class="pure-text-contact">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
-							<span class="sub alt-font">Do you like my works?</span>
-							<h1><span>So let's talk about your project!</span></h1>
-							<i class="icon icon-chat"></i>							
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-		
-		<div class="footer-container">
-		
-            <footer class="bg-primary ">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<span class="text-white">© 2020 Jigar Jaware - All Rights Reserved.</span>
-							<br>
-							<br>
-							<i class="icon text-white icon_mail"></i>							
 
-							<a href="contact.html" class="text-white"><span class="text-white"> Get in touch with me <i class="icon arrow_right"></i></span></a>
-						</div>
-					</div>
+        <!-- Gallery Section -->
+
+		<section class="">
+                
+
+				<div class="container">
+	
+					<div class=" row">
+						<div class=" row">
+					
+                            <div class="col-md-4 col-sm-6 project branding image-holder">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" 
+                                data-image="../img/project_1.jpg"
+                                data-target="#image-gallery">
+                                    <img class="thumbnail" src="../img/project_1.jpg"
+                                    alt="Image">
+                                </a> 
+							</div>
+							
+                            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                                data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                data-target="#image-gallery">
+                                    <img class="img-thumbnail"
+                                        src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                        alt="Another alt text">
+                                </a>
+                            </div> -->
+                            
+                        </div>   
+                                         
+                        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                                        </button>
+        
+                                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
 				</div>
 				
-			</footer>
+			</section>
+		
+
+
+        <!-- Footer -->
+        <footer class="bg-primary ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <span class="text-white">© 2020 Jigar Jaware - All Rights Reserved.</span>
+                        <br>
+                        <br>
+                        <i class="icon text-white icon_mail"></i>							
+
+                        <a href="contact.html" class="text-white"><span class="text-white"> Get in touch with me <i class="icon arrow_right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
 		</div>
 				
 		<script src="https://www.youtube.com/iframe_api"></script>

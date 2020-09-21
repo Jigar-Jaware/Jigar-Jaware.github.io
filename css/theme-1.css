@@ -2095,6 +2095,15 @@ blockquote {
 .column-projects .project .background-image-holder {
   left: 15px;
 }
+@media screen and (max-width: 600px) {
+  .column-projects .project .background-image-holder {
+    left: 0px;
+  }
+  .project .hover-state{
+    margin-left: 0px;
+  }
+}
+
 .image-gallery {
   margin-top: 64px;
 }
@@ -2686,8 +2695,8 @@ iframe.mail-list-form {
   display: none !important;
 }
 footer {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 footer.social h1 {
   margin-bottom: 24px;
@@ -3839,7 +3848,7 @@ footer.short-2 .contact-action:hover {
   margin-left: 32px;
 }
 .simple-bar .nav-menu {
-  padding-top: 54px;
+  padding-top: none;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
@@ -4344,4 +4353,8 @@ footer.short-2 .contact-action:hover {
 }
 .no-loader .loader {
   display: none !important;
+}
+.timeline-1{
+  padding-top: 0;
+  padding-bottom: 0;
 }
