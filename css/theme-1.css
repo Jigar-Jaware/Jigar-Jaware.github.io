@@ -1997,6 +1997,9 @@ blockquote {
 .column-projects .project.col-md-4 {
   width: 33.33333%;
   overflow: hidden;
+
+
+  
 }
 .column-projects .project.col-md-4 .background-image-holder {
   width: 100% !important;
