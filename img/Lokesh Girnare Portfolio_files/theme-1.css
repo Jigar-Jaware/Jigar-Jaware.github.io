@@ -451,7 +451,7 @@ nav hr {
   bottom: 20px !important;
 }
 .nav-menu {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .nav-menu .social-icons {
   float: right;
@@ -1995,7 +1995,7 @@ blockquote {
   width: 103%;
 }
 .column-projects .project.col-md-4 {
-  width: 100%;
+  width: 33.33333%;
   overflow: hidden;
 
 
@@ -2089,20 +2089,14 @@ blockquote {
   margin-bottom: 80px;
 }
 .column-projects .project {
+  height: 300px;
   margin-bottom: 15px;
-  height: 361px;
-  width: 366px;
-  margin-left: 12px;
-  margin-right: 12px;
 }
 .column-projects .project .hover-state h3 {
   margin-bottom: 24px;
-  
 }
 .column-projects .project .background-image-holder {
-  /* left: 15px; */
-  margin-block: auto;
-
+  left: 15px;
 }
 @media screen and (max-width: 600px) {
   .column-projects .project .background-image-holder {
