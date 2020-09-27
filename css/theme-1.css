@@ -450,8 +450,11 @@ nav hr {
 .nav-sticky .logo-square {
   bottom: 20px !important;
 }
-.nav-menu {
+/* .nav-menu {
   padding-top: 20px;
+} */
+.nav-menu .columns h1 {
+ margin: 25px 0px;
 }
 .nav-menu .social-icons {
   float: right;
@@ -484,6 +487,9 @@ nav hr {
 .overlay-bar .has-dropdown:after {
   color: #fff;
 }
+.col-md-9 {
+  margin: 25px 0px;
+}
 .menu {
   padding: 0;
   margin: 0;
@@ -499,6 +505,14 @@ nav hr {
 .menu li:last-child {
   margin-right: 0px;
 }
+.menu li :nth-child(3)
+{
+margin-right: 0px;
+}
+body > div.nav-container > nav > div > div.row.nav-menu > div.col-md-9.col-sm-9.columns.text-right > ul > li:nth-child(3){
+  margin-right: 0px;
+}
+
 .menu li a {
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -598,10 +612,10 @@ nav hr {
   background: rgba(255, 255, 255, 0.9);
 }
 .top-bar.nav-sticky .nav-menu {
-  padding-top: 32px;
+  padding-top: 0px;
 }
 .top-bar.nav-sticky .menu li a {
-  padding-bottom: 32px;
+  padding-bottom: 0px;
 }
 .top-bar.nav-sticky .subnav {
   background: rgba(255, 255, 255, 0.9);
@@ -846,12 +860,12 @@ header .btn:last-child {
   background-color: #222222;
 }
 .header-icons {
-  padding: 160px 0px;
+  padding: 140px 0px;
   position: relative;
   overflow: hidden;
 }
 .header-icons h1 {
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 .header-icons i {
   font-size: 56px;
@@ -1951,6 +1965,9 @@ blockquote {
 .author-details .social-icons {
   margin-bottom: -8px;
   margin-top: 8px;
+}
+.projects-gallery  {
+  padding: 50px 0px;
 }
 .projects-gallery p.lead {
   margin-bottom: 64px !important;
@@ -3190,7 +3207,7 @@ footer.short-2 .contact-action:hover {
     display: none;
   }
   nav {
-    max-height: 80px;
+    max-height: 100px;
     overflow: hidden;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -3200,7 +3217,7 @@ footer.short-2 .contact-action:hover {
     margin-bottom: 32px;
   }
   nav .columns {
-    width: 100%;
+    width: 60%;
   }
   nav .social-icons {
     display: none;
@@ -3866,7 +3883,7 @@ footer.short-2 .contact-action:hover {
   margin-right: 40px;
 }
 .simple-bar .menu li a {
-  padding-bottom: 54px;
+  padding: 15px 0px;
 }
 .simple-bar.nav-sticky .logo {
   max-height: 30px;
@@ -3994,7 +4011,7 @@ footer.short-2 .contact-action:hover {
 .fullscreen-nav-container {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 80%;
   top: 0;
   z-index: 999;
   background: rgba(1, 162, 166, 0.92);
@@ -4035,7 +4052,7 @@ footer.short-2 .contact-action:hover {
   -moz-transform: translate3d(0, 200px, 0);
   transform: translate3d(0, 200px, 0);
   opacity: 0;
-  margin-top: 80px;
+  margin-top: 0px;
 }
 .fullscreen-nav-container.fade-fullscreen-nav .container,
 .fullscreen-nav-container.fade-fullscreen-nav .close-fullscreen-nav {
