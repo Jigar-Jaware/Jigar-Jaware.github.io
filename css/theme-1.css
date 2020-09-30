@@ -273,7 +273,7 @@ section.duplicatable-content {
   padding-bottom: 40px;
 }
 section:nth-of-type(odd) {
-  background: #f4f4f4;
+  background: #ffffff;
 }
 section:nth-of-type(even) {
   background: #ffffff;
@@ -450,9 +450,9 @@ nav hr {
 .nav-sticky .logo-square {
   bottom: 20px !important;
 }
-/* .nav-menu {
+.nav-menu {
   padding-top: 20px;
-} */
+}
 .nav-menu .columns h1 {
  margin: 25px 0px;
 }
@@ -1967,7 +1967,7 @@ blockquote {
   margin-top: 8px;
 }
 .projects-gallery  {
-  padding: 50px 0px;
+  padding: 50px 0px 0px;
 }
 .projects-gallery p.lead {
   margin-bottom: 64px !important;
@@ -2067,8 +2067,9 @@ blockquote {
   -moz-transition: all .5s ease;
   transition: all .5s ease;
   opacity: 0;
-  margin-left: 15px;
-  padding-right: 15px;
+  /* margin-left: 15px; */
+  padding-right: 0px;
+  right: 0px;
 }
 .project:hover .hover-state {
   opacity: 1;
@@ -2106,7 +2107,7 @@ blockquote {
   margin-bottom: 80px;
 }
 .column-projects .project {
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   height: 361px;
   width: 366px;
   margin-left: 12px;
@@ -2868,7 +2869,7 @@ footer.short-2 .contact-action:hover {
     max-height: 8000px;
   }
   .nav-menu {
-    padding-top: 24px;
+    padding-top: 0px;
   }
   .top-bar .logo {
     bottom: 0px;
@@ -2934,8 +2935,8 @@ footer.short-2 .contact-action:hover {
   }
   section,
   header {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 50px;
+    padding-bottom: 50ssspx;
   }
   .no-align-mobile {
     padding-top: 0px !important;
@@ -2944,6 +2945,7 @@ footer.short-2 .contact-action:hover {
   h1 {
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 24px;
   }
   p.lead {
     font-size: 14px;
@@ -3137,7 +3139,8 @@ footer.short-2 .contact-action:hover {
     margin-bottom: 8px;
   }
   .project {
-    width: 100%;
+    width: 60%;
+    height: 60%;
   }
   .image-gallery .image-holder {
     height: 225px;
