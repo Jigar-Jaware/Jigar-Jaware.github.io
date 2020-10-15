@@ -191,6 +191,74 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	});
 	
+	/********************* Filter CODE *********************************/ 
+
+	const buttons=document.querySelector("#buttons").children;
+	const items=document.querySelector(".column-projects").children;
+
+	for (let i=0; i<buttons.length; i++){
+		buttons[i].addEventListener("click",function(){
+			for(let j=0; j<buttons.length; j++){
+				buttons[j].classList.remove("active")
+			}
+			this.classList.add("active")
+			const target=this.getAttribute("data-target");
+			
+			for(let k=0; k<items.length; k++){
+				items[k].style.display="none"; 
+				if(items[k].getAttribute("data-id")==target){
+					items[k].style.display="block"; 
+				}
+				if(target=="all"){
+					items[k].style.display="block"; 
+				}
+			}
+		})
+	}
+
+	// /****************** Gallery Code *****************************************************/
+	
+	function openModal() {
+		document.getElementById("myModal").style.display = "block";
+	  }
+
+	  function closeModal() {
+		document.getElementById("myModal").style.display = "none";
+	  }
+
+	  var slideIndex = 1;
+	  showSlides(slideIndex);
+
+	  function plusSlides(n) {
+		showSlides((slideIndex += n));
+	  }
+
+	  function currentSlide(n) {
+		showSlides((slideIndex = n));
+	  }
+
+	  function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("demo");
+		var captionText = document.getElementById("caption");
+		if (n > slides.length) {
+		  slideIndex = 1;
+		}
+		if (n < 1) {
+		  slideIndex = slides.length;
+		}
+		for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " active";
+		captionText.innerHTML = dots[slideIndex - 1].alt;
+	  }
+
 	/************** Parallax Scripts **************/
 
     var isFirefox = typeof InstallTrigger !== 'undefined';
@@ -558,3 +626,4 @@ function onYouTubeIframeAPIReady() {
 	});
 	
 }
+

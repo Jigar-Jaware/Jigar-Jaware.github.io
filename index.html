@@ -22,7 +22,8 @@
         	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
 		<![endif]-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
-        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		
     </head>
     <body>
     	<div class="loader">
@@ -73,224 +74,341 @@
 					</div>	
 			</header>
 
-		<section class="projects-gallery" id="portfolio">
+			<section class="projects-gallery" id="portfolio">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
 						<h1><strong>PORTFOLIO</strong></h1>
 					</div>
 				</div>
-				<div class="container text-center">
-					<div class="col-sm-1">
-					</div>
-					<div class="col-sm-2">
-						<a href="./projects/web_design.html">
-							<h2 class="text-white btn btn-primary btn-dark">Web Design</h2>
-						</a>
-					</div>
-					
-					<div class="col-sm-2">
-						<a href="./projects/mobileapp.html">
-						<h2 class="text-white btn btn-primary btn-dark">Mobile App</h2>
-						</a>
-					</div>
-					
-					<div class="col-sm-2">
-						<a href="./projects/webapp.html">
-						<h2 class="text-white btn btn-primary btn-dark">Web App</h2>
-						</a>
-					</div>
 
-					<div class="col-sm-2">
-						<a href="./projects/branding.html">
-						<h2 class="text-white btn btn-primary btn-dark">Branding</h2>
-						</a>
-					</div>
-
-					<div class="col-sm-2">
-						<a href="./projects/video.html">
-						<h2 class="text-white btn btn-primary btn-dark">Video</h2>
-						</a>
-					</div>
-					<div class="col-sm-1">
-					</div>
-				</div>
-				<br>
-
-				<br>
-			<div class="projects-wrapper clearfix">
+				<div class="container filter-btn text-center">
+					<ul id="buttons">
+						<!-- <li class="text-white btn btn-primary btn-dark active" data-target="all">All</li> -->
+						<li class="text-white btn btn-primary btn-dark active" data-target="web_design">Web Design</li>
+						<li class="text-white btn btn-primary btn-dark" data-target="mobile_app">Mobile App</li>
+						<li class="text-white btn btn-primary btn-dark" data-target="web_app">Web App</li>
+						<li class="text-white btn btn-primary btn-dark" data-target="branding">Branding</li>
+						<li class="text-white btn btn-primary btn-dark" data-target="video">Video</li>
+					</ul>
+				</div>	
 				
-				<div class="container">
-									
-					<div class="column-projects">
-					
-						<div class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder" >
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/silicon@2x.png">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><strong>Project 1</h1>
-									<a href="./projects/project1.html" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/Edu@2x.png">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><strong>Project 2</h1>
-									<a href="./projects/project2.html" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-4 col-md-2 col-12 mb-4  project print image-holder">
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/Apx@2x.png">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><span>Project 3</h1>
-									<a href="./projects/project3.html" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-4 col-md-2 col-12 mb-4  project branding image-holder">
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/Blue@2x.png">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><strong>Project 4</h1>
-									<a href="#" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-4 col-md-2 col-12 mb-4  project print image-holder">
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/Varutra@2x.png">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><span>Project 5</h1>
-									<a href="#" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-2 col-12 mb-4  project print image-holder">
-							<div class="background-image-holder">
-								<img class="background-image" alt="Background Image" src="img/Orange@2x.png">
-							</div>
-							<div class="hover-state">
-								<div class="align-vertical">
-									<h1 class="text-white"><span>Project 6</h1>
-									<a href="#" class="btn btn-primary btn-white">See Project</a>
-								</div>
-							</div>
-						</div>					
-					</div>
-					
-				</div>
+				<div class="projects-wrapper clearfix">
 				
-			</section>
-			
-			<section class="timeline-1"  id="about">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-							<h1>Here is a little of my story</h1>
-							<p class="lead">
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae. 
-							</p>	
+					<div class="container">
+									
+						<div class="column-projects">
+
+						<!-- <div class="items"> -->
+
+							<div  data-id="web_design" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder" >
+								<div class="background-image-holder" >
+									<img class="background-image" alt="Background Image" src="./img/web_design/Aarna-P.jpg"> 
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 1</strong></h1>
+										<a  class="btn btn-primary btn-white" onclick="openModal();currentSlide(1)">See Project </a>
+									</div>
+								</div>
+							</div>	
+						
+							<div data-id="web_design" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/web_design/Apx@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 2</strong></h1>
+										<a onclick="openModal();currentSlide(2)"class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+
+							<div data-id="web_design" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/web_design/Artboard – 1@2x.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 3</strong></h1>
+										<a onclick="openModal();currentSlide(3)" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+							
+							<div data-id="web_design" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/web_design/Blue@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 4</strong></h1>
+										<a onclick="openModal();currentSlide(4)" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+						
+							<div data-id="web_design" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/web_design/Edu@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 5</strong></h1>
+										<a onclick="openModal();currentSlide(5)" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="web_design" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/web_design/Orange@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 6</strong></h1>
+										<a onclick="openModal();currentSlide(6)" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="web_design" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/web_design/silicon@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 7</strong></h1>
+										<a onclick="openModal();currentSlide(7)" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="web_design" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/web_design/Varutra@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 8</strong></h1>
+										<a onclick="openModal();currentSlide(8)" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Mobile App  -->
+							<div data-id="mobile_app" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/mob-app/Cricket@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 1</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="mobile_app" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/mob-app/GENE@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 2</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="mobile_app" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/mob-app/yk@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 3</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Web Apps -->
+							<div data-id="web_app" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/web-app/Fun@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 1</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="web_app" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/web-app/Fundoo@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 2</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="web_app" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/web-app/GEN@2x.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 3</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Branding -->
+
+							<div data-id="branding" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/branding/Branding Illustration.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 1</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="branding" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/branding/Flayer.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 2</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="branding" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/branding/Hoarding.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 3</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="branding" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/branding/Logo Design.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 4</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="branding" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/branding/packaging.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 5</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="branding" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/branding/S B.png">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 6</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="branding" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/branding/Social media Design.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 7</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="branding" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/branding/Stationary.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 8</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+									
+							<!-- Video -->
+
+							<div data-id="video" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/video/AD Video.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 1</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="video" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/video/Sangitam Video.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 7</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+
+							<div data-id="video" class="col-lg-4 col-md-2 col-12 mb-4  project development image-holder">
+								<div class="background-image-holder">
+									<img class="background-image" alt="Background Image" src="./img/video/Anandi  Video.jpg">
+								</div>
+								<div class="hover-state">
+									<div class="align-vertical">
+										<h1 class="text-white"><strong>Project 8</strong></h1>
+										<a href="#" class="btn btn-primary btn-white">See Project</a>
+									</div>
+								</div>
+							</div>
+	
 						</div>
 					</div>
-					
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="timeline-event">
-								<div class="col-sm-6 col-md-push-6">
-									<h2>2005-2009</h2>
-									<h5>Junior Designer at Black Rock Interactive Agency<br></h5>
-								</div>
-								
-								<div class="middle">
-									<i class="icon icon-map"></i>
-									<div class="vertical-line"></div>
-								</div>
-								
-								<div class="col-sm-6 col-md-pull-6">
-									<p>
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&nbsp;</p>
-								</div>
-								
-								
-							</div>
-							
-							<div class="timeline-event">
-								<div class="col-sm-6">
-									<h2>2009-2010</h2>
-									<h5>Design Team Leader at Creativo INC.</h5>	
-								</div>
-								
-								<div class="middle">
-									<i class="icon icon-video"></i>
-									<div class="vertical-line"></div>
-								</div>
-								
-								<div class="col-sm-6">
-									<p>
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-									
-								</div>
-							</div>
-							
-							<div class="timeline-event">
-								<div class="col-sm-6 col-md-push-6">
-									<h2>2010-2015</h2>
-									<h5>Junior Creative Director at One Shot Agency</h5>
-								</div>
-								
-								<div class="middle">
-									<i class="icon icon-trophy"></i>
-									<div class="vertical-line"></div>
-								</div>
-								
-								<div class="col-sm-6 col-md-pull-6">
-									<p>
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-								</div>
-								
-								
-							</div>
-							
-							<div class="timeline-event">
-								<div class="col-sm-6">
-									<h2>2015</h2>
-									<h5>Freelance</h5>	
-								</div>
-								
-								<div class="middle">
-									<i class="icon icon-target"></i>
-									<div class="vertical-line"></div>
-								</div>
-								
-								<div class="col-sm-6">
-									<p>
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-									
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					
-		
 				</div>
 			</section>
 		</div>
@@ -311,6 +429,118 @@
 				</div>
 			</footer>
 		</div>
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+			  <div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="./img/1d5990102063057.5f2d946434e09.jpg" style="width: 100%" />
+			  </div>
+	  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="./img/63a57b47341761.587761b362ed5.png" style="width: 100%" />
+			  </div>
+	  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="./img/a09af0104821707.5f6b6679c7fb6.png" style="width: 100%" />
+			  </div>
+	  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="./img/b64ef289852303.5ebe3c64c94ec.jpg" style="width: 100%" />
+			  </div>
+			  <div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="./img/d9f23e96275519.5eaa9345a7c81.jpg" style="width: 100%" />
+			  </div>
+	  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+	  
+			  <div class="column">
+				<img class="demo cursor" src="./img/web_design/Aarna-P.jpg"  onclick="currentSlide(1)"
+				  alt="Nature and sunrise" />
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./img/web_design/Apx@2x.png"  onclick="currentSlide(2)"
+				 alt="Snow" />
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./img/web_design/Artboard – 1@2x.jpg"  onclick="currentSlide(3)"
+				  alt="Mountains and fjords" />
+			  </div>
+			  <!-- <div class="column">
+				<img class="demo cursor" src="./img/web_design/Blue@2x.png"  onclick="currentSlide(4)"
+				  alt="Northern Lights" />
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./img/web_design/Edu@2x.png"  onclick="currentSlide(5)"
+				  alt="Northern Lights" />
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./img/web_design/Orange@2x.png"  onclick="currentSlide(6)"
+				  alt="Northern Lights" />
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./img/web_design/silicon@2x.png"  onclick="currentSlide(7)"
+				  alt="Mountains and fjords" />
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./img/web_design/Varutra@2x.png"  onclick="currentSlide(8)"
+				  alt="Northern Lights" />
+			  </div> -->
+			</div>
+		  </div>
+	  
+		  <script>
+			function openModal() {
+			  document.getElementById("myModal").style.display = "block";
+			}
+	  
+			function closeModal() {
+			  document.getElementById("myModal").style.display = "none";
+			}
+	  
+			var slideIndex = 1;
+			showSlides(slideIndex);
+	  
+			function plusSlides(n) {
+			  showSlides((slideIndex += n));
+			}
+	  
+			function currentSlide(n) {
+			  showSlides((slideIndex = n));
+			}
+	  
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("demo");
+			  var captionText = document.getElementById("caption");
+			  if (n > slides.length) {
+				slideIndex = 1;
+			  }
+			  if (n < 1) {
+				slideIndex = slides.length;
+			  }
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex - 1].style.display = "block";
+			  dots[slideIndex - 1].className += " active";
+			  captionText.innerHTML = dots[slideIndex - 1].alt;
+			}
+		  </script>
 				
 		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="js/jquery.min.js"></script>
