@@ -2722,8 +2722,11 @@ iframe.mail-list-form {
   display: none !important;
 }
 footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer.container{
+  margin-left: 20%;
 }
 footer.social h1 {
   margin-bottom: 24px;
